@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 17:38:44 by kgriset           #+#    #+#             */
-/*   Updated: 2024/04/09 11:57:59 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/04/19 08:46:38 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	sig_handler(int signum, siginfo_t *info, void *context)
 {
 	static int	bit_read;
 
+	(void)info;
+	(void)context;
 	g_receiving = 0;
 	if (signum == SIGUSR2)
 		++bit_read;

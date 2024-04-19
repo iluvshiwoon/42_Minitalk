@@ -6,7 +6,7 @@
 /*   By: kgriset <kgriset@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 16:23:10 by kgriset           #+#    #+#             */
-/*   Updated: 2024/04/05 14:00:14 by kgriset          ###   ########.fr       */
+/*   Updated: 2024/04/19 08:46:52 by kgriset          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	sig_handler(int signum, siginfo_t *info, void *context)
 	static int	i;
 	static char	c;
 
+	(void)context;
 	pid = info->si_pid;
 	bin_to_char(signum, &c);
 	if (++i == 8)
