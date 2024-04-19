@@ -2,8 +2,7 @@ C_FILES_CLIENT = client.c
 
 C_FILES_SERVER = server.c
 
-C_FLAGS = -g -Wall -Wextra
-#-Werror
+C_FLAGS = -g -Wall -Wextra -Werror
 
 CLIENT = client
 SERVER = server
